@@ -93,12 +93,14 @@ make
 ```mermaid
 graph TD;
     BOOTUP-->SRND_PowerUp;
+	Q-->SRND_PowerUp;
     SRND_PowerUp-->SRND_BeforeTransaction;
     SRND_BeforeTransaction-->TRANSACTION;
     TRANSACTION-->SRND_AfterTransaction;
     SRND_AfterTransaction-->SRND_BeforeTransaction;
     SRND_AfterTransaction-->SRND_PowerDown;
-    SRND_PowerDown-->SHUTDOWN;
+    SRND_PowerDown-->Q;
+	SRND_PowerDown-->SHUTDOWN;
 	SHUTDOWN-->BOOTUP;
 ```
 
