@@ -155,3 +155,9 @@ SRND test 4
         UN : EF786FDA
 SRND test 4 has 8 transactions
 ```
+
+## :snowman: Author
+Eray Öztürk ([@diffstorm](https://github.com/diffstorm))
+
+## LICENSE
+This project is licensed under the [GPL 3.0 License](LICENSE) - see the LICENSE file for details.
